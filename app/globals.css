@@ -1485,3 +1485,30 @@ h1 {
     width: 100%;
   }
 }
+
+/* Redesign Prototype Floating Badge (fix/style branch) */
+.prototype-floating-badge {
+  position: fixed;
+  bottom: 20px;
+  inset-inline-end: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #3B49DF;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 10px 25px -5px rgba(59, 73, 223, 0.4);
+  transition: all 0.2s ease;
+}
+
+.prototype-floating-badge:hover {
+  background: #2F3AB2;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px -5px rgba(59, 73, 223, 0.5);
+}
+

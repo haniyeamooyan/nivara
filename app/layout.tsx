@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +14,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Link href="/redesign" className="prototype-floating-badge" aria-label="پیش‌نمایش بازطراحی نیوارا">
+          <span style={{ display: "inline-block", width: "8px", height: "8px", borderRadius: "50%", background: "#4ADE80" }} />
+          <span>🎨 پیش‌نمایش زنده بازطراحی (fix/style)</span>
+        </Link>
+      </body>
     </html>
   );
 }
+
