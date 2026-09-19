@@ -1,0 +1,1 @@
+ALTER TABLE "purchases" ALTER COLUMN "team_id" DROP NOT NULL;
